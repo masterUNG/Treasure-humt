@@ -8,6 +8,6 @@ public class Play2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_play2);
+        setContentView(R.layout.activity_section3);
     }
 }

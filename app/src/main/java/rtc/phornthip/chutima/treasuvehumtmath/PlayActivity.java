@@ -20,8 +20,10 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private TextView questTextView, ch1TextView, ch2TextView,
             ch3TextView, scoreTextView, timeTextView;
     private Random random;
-    private int firstAnInt, secondAnInt, answerAnInt, trueChoiceAnInt, scoreAnInt = 0;
-    private int timeAnInt = 30; // นี่คือเวลาลูป
+    private int firstAnInt, secondAnInt, answerAnInt, trueChoiceAnInt;
+    private int scoreAnInt = 0; // คะแนน
+    private int timeAnInt = 20; // กำหนดเวลาที่นี่
+    private int endScoreAnInt = 5; // ขอบเขตคะแนน
     private int falseAnInt = 0;
     private ImageView[] boatImageViews = new ImageView[4];
     private int[] widgitImageInts = new int[]{R.id.imageView3, R.id.imageView4,
@@ -138,7 +140,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             boatImageViews[i].setVisibility(View.INVISIBLE);
         }   // for
 
-
+        //กำหนด รูปที่เรือรม
 
         if (scoreAnInt < 5) {
             boatImageViews[0].setVisibility(View.VISIBLE);
@@ -184,6 +186,14 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         Log.d("4janV1", "Score ==> " + scoreAnInt);
 
         scoreTextView.setText("Score = " + Integer.toString(scoreAnInt));
+
+        // เช็ค คะแนน
+        if (scoreAnInt >= endScoreAnInt) {
+
+            //ย้ายไปด่านต่อไป
+            startActivity(new Intent(PlayActivity.this, Play2Activity.class));
+
+        }
 
 
     }   // checkAnser
