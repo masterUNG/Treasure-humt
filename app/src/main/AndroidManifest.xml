@@ -21,7 +21,8 @@
         <activity android:name=".Cartoon2" />
         <activity android:name=".Section2" />
         <activity android:name=".Section3" />
-        <activity android:name=".SuccessGame"></activity>
+        <activity android:name=".SuccessGame" />
+        <activity android:name=".Play2Activity"></activity>
     </application>
 
 </manifest>
