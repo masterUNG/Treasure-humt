@@ -12,6 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
 import java.util.Random;
 
 public class Play4Activity extends AppCompatActivity implements View.OnClickListener {
@@ -29,6 +30,7 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
     private int[] widgitImageInts = new int[]{R.id.imageView26_p4, R.id.imageView29_p4,
             R.id.imageView32_p4, R.id.imageView30_p4};
     private boolean aBoolean = true;
+    private double firstADouble, secondADouble, answerADouble;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,15 +96,20 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
         firstAnInt = random.nextInt(100);   // Random ตัวแรก
         secondAnInt = random.nextInt(100);  // Random ตัวต่อไป
 
+        firstADouble = firstAnInt;
+        secondADouble = secondAnInt;
 
-
+        answerADouble = firstADouble / secondADouble;
+        DecimalFormat decimalFormat = new DecimalFormat();
+        decimalFormat.applyPattern("0.00");
+        answerADouble = Double.parseDouble(decimalFormat.format(answerADouble));
 
         answerAnInt = firstAnInt * secondAnInt; // บวกกัน
         trueChoiceAnInt = random.nextInt(3);
         Log.d("4janV1", "ข้อเลือกที่ถูก ==> " + (trueChoiceAnInt + 1));
 
         //Show Qurstion
-        questTextView.setText(Integer.toString(firstAnInt) + " x " +
+        questTextView.setText(Integer.toString(firstAnInt) + " / " +
                 Integer.toString(secondAnInt) + " = ?");
 
         //Show Choice
@@ -112,7 +119,7 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
         }   // for
 
         //Show True Choice
-        textViews[trueChoiceAnInt].setText(Integer.toString(answerAnInt));
+        textViews[trueChoiceAnInt].setText(Double.toString(answerADouble));
 
 
     }   // playController
@@ -123,13 +130,13 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
 
         switch (view.getId()) {
             case R.id.textView2_p4:
-                checkAnser(Integer.parseInt(ch1TextView.getText().toString()));
+                checkAnser(Double.parseDouble(ch1TextView.getText().toString()));
                 break;
             case R.id.textView3_p4:
-                checkAnser(Integer.parseInt(ch2TextView.getText().toString()));
+                checkAnser(Double.parseDouble(ch2TextView.getText().toString()));
                 break;
             case R.id.textView4_p4:
-                checkAnser(Integer.parseInt(ch3TextView.getText().toString()));
+                checkAnser(Double.parseDouble(ch3TextView.getText().toString()));
                 break;
         }
 
@@ -137,7 +144,7 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
 
     }   // onClick
 
-    private void checkAnser(int intChoice) {
+    private void checkAnser(double intChoice) {
 
         //กำหนดให้ภาพเรือ มองไม่เห็นทั้งหมด
         for (int i = 0; i < boatImageViews.length; i++) {
@@ -158,7 +165,7 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
 
 
         //เช็คคะแนน
-        if (intChoice == answerAnInt) {
+        if (intChoice == answerADouble) {
             scoreAnInt += 1;
         } else {
 
