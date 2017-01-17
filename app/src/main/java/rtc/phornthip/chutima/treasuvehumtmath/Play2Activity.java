@@ -54,12 +54,12 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
     }//Main Method
 
     private void bindWidget() {
-        questTextView = (TextView) findViewById(R.id.textView5_p3);
-        ch1TextView = (TextView) findViewById(R.id.textView2_p3);
-        ch2TextView = (TextView) findViewById(R.id.textView3_p3);
-        ch3TextView = (TextView) findViewById(R.id.textView4_p3);
-        scoreTextView = (TextView) findViewById(R.id.textView6_p3);
-        timeTextView = (TextView) findViewById(R.id.textView7_p3);
+        questTextView = (TextView) findViewById(R.id.textView5_p2);
+        ch1TextView = (TextView) findViewById(R.id.textView2_p2);
+        ch2TextView = (TextView) findViewById(R.id.textView3_p2);
+        ch3TextView = (TextView) findViewById(R.id.textView4_p2);
+        scoreTextView = (TextView) findViewById(R.id.textView6_p2);
+        timeTextView = (TextView) findViewById(R.id.textView7_p2);
 
         for (int i=0;i<boatImageViews.length;i++) {
             boatImageViews[i] = (ImageView) findViewById(widgitImageInts[i]);
