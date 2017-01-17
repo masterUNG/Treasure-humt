@@ -191,8 +191,9 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
         if (scoreAnInt >= endScoreAnInt) {
 
             //ย้ายไปด่านต่อไป
-            startActivity(new Intent(Play2Activity.this, Play3Activity.class));
-
+            aBoolean = false;
+            MyAlert myAlert = new MyAlert(Play2Activity.this, "กุญแจ ดอกที่ 2", "ยินดีด้วย คุณได้ กุญแจ ดอกที่ 2 ละ", Play3Activity.class);
+            myAlert.myDialog();
         }
 
 

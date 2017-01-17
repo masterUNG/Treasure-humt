@@ -204,7 +204,9 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
         if (scoreAnInt >= endScoreAnInt) {
 
             //ย้ายไปด่านต่อไป
-            startActivity(new Intent(Play4Activity.this, Play5Activity.class));
+            aBoolean = false;
+            MyAlert myAlert = new MyAlert(Play4Activity.this, "กุญแจ ดอกที่ 4", "ยินดีด้วย คุณได้ กุญแจ ดอกที่ 4 ละ", Play5Activity.class);
+            myAlert.myDialog();
 
 
         }

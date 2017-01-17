@@ -190,7 +190,10 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         if (scoreAnInt >= endScoreAnInt) {
 
             //ย้ายไปด่านต่อไป
-            startActivity(new Intent(PlayActivity.this, Play2Activity.class));
+            //startActivity(new Intent(PlayActivity.this, Play2Activity.class));
+            aBoolean = false;
+            MyAlert myAlert = new MyAlert(PlayActivity.this, "กุญแจ ดอกที่ 1", "ยินดีด้วย คุณได้ กุญแจ ดอกที่ 1 ละ", Play2Activity.class);
+            myAlert.myDialog();
 
         }
 

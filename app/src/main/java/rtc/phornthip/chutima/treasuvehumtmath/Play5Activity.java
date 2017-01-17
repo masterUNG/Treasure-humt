@@ -193,7 +193,9 @@ public class Play5Activity extends AppCompatActivity implements View.OnClickList
         if (scoreAnInt >= endScoreAnInt) {
 
             //ย้ายไปด่านต่อไป
-            startActivity(new Intent(Play5Activity.this, SuccessGameActivity.class));
+            aBoolean = false;
+            MyAlert myAlert = new MyAlert(Play5Activity.this, "กุญแจ ดอกที่ 5", "ยินดีด้วย คุณได้ กุญแจ ดอกที่ 5 ละ", SuccessGameActivity.class);
+            myAlert.myDialog();
 
 
         }

@@ -193,7 +193,9 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
         if (scoreAnInt >= endScoreAnInt) {
 
             //ย้ายไปด่านต่อไป
-            startActivity(new Intent(Play3Activity.this, Play4Activity.class));
+            aBoolean = false;
+            MyAlert myAlert = new MyAlert(Play3Activity.this, "กุญแจ ดอกที่ 3", "ยินดีด้วย คุณได้ กุญแจ ดอกที่ 3 ละ", Play4Activity.class);
+            myAlert.myDialog();
 
 
         }
