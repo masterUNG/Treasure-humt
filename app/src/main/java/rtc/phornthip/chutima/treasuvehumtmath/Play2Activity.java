@@ -93,12 +93,12 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
 
         firstAnInt = random.nextInt(100);   // Random ตัวแรก
         secondAnInt = random.nextInt(100);  // Random ตัวต่อไป
-        answerAnInt = firstAnInt + secondAnInt; // บวกกัน
+        answerAnInt = firstAnInt - secondAnInt; // บวกกัน
         trueChoiceAnInt = random.nextInt(3);
         Log.d("4janV1", "ข้อเลือกที่ถูก ==> " + (trueChoiceAnInt + 1));
 
         //Show Qurstion
-        questTextView.setText(Integer.toString(firstAnInt) + " + " +
+        questTextView.setText(Integer.toString(firstAnInt) + " - " +
                 Integer.toString(secondAnInt) + " = ?");
 
         //Show Choice
