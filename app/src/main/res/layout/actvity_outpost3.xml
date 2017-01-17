@@ -18,17 +18,7 @@
         app:srcCompat="@drawable/you3"
         android:id="@+id/imageView22_p3"
         android:layout_marginLeft="150dp"
-        android:layout_marginTop="20dp"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/you2"
-        android:id="@+id/imageView21_p3"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="110dp"
-        android:visibility="invisible" />
+        android:layout_marginTop="20dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -37,15 +27,6 @@
         android:id="@+id/imageView19_p3"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="180dp"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/you2"
-        android:id="@+id/imageView18_p3"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="250dp"
         android:visibility="invisible" />
 
     <TextView
@@ -125,22 +106,23 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:srcCompat="@drawable/you3"
+        android:id="@+id/imageView10_p3"
+        android:layout_alignBottom="@+id/textView3_p3"
+        android:layout_alignLeft="@+id/imageView18_p3"
+        android:layout_alignStart="@+id/imageView18_p3"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:srcCompat="@drawable/you2"
         android:id="@+id/imageView20_p3"
         android:layout_below="@+id/textView4_p3"
         android:layout_toStartOf="@+id/textView7_p3"
         android:layout_alignParentBottom="true"
         android:layout_alignRight="@+id/imageView19_p3"
-        android:layout_alignEnd="@+id/imageView19_p3" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/you3"
-        android:id="@+id/imageView10_p3"
-        android:layout_alignBottom="@+id/textView3_p3"
-        android:layout_alignLeft="@+id/imageView18_p3"
-        android:layout_alignStart="@+id/imageView18_p3"
+        android:layout_alignEnd="@+id/imageView19_p3"
         android:visibility="invisible" />
 
 
