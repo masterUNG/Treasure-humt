@@ -48,7 +48,7 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
 
         playController();
 
-        // countTime();
+        countTime();
 
 
     }//Main Method

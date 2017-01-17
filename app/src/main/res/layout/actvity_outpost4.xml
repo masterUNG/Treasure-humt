@@ -13,6 +13,50 @@
     tools:context="rtc.phornthip.chutima.treasuvehumtmath.PlayActivity">
 
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lan1"
+        android:id="@+id/imageView26_p4"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView7_p4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lan1"
+        android:id="@+id/imageView29_p4"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView26_p4"
+        android:layout_toEndOf="@+id/imageView26_p4"
+        android:layout_marginTop="18dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lan1"
+        android:id="@+id/imageView32_p4"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView4_p4"
+        android:layout_alignEnd="@+id/textView4_p4"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lan1"
+        android:id="@+id/imageView30_p4"
+        android:layout_alignBottom="@+id/imageView32_p4"
+        android:layout_alignLeft="@+id/textView4_p4"
+        android:layout_alignStart="@+id/textView4_p4"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="invisible" />
+
     <TextView
         android:id="@+id/textView4_p4"
         android:layout_width="100dp"
@@ -67,16 +111,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lan1"
-        android:id="@+id/imageView26_p4"
-        android:layout_marginTop="45dp"
-        android:layout_below="@+id/textView7_p4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:id="@+id/textView3_p4"
         android:layout_width="100dp"
@@ -101,63 +135,6 @@
         android:layout_below="@+id/textView5_p4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lan1"
-        android:id="@+id/imageView27_p4"
-        android:layout_alignBottom="@+id/imageView26_p4"
-        android:layout_toLeftOf="@+id/imageView30_p4"
-        android:layout_toStartOf="@+id/imageView30_p4"
-        android:layout_marginRight="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="21dp"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lan1"
-        android:id="@+id/imageView29_p4"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView26_p4"
-        android:layout_toEndOf="@+id/imageView26_p4"
-        android:layout_marginTop="18dp"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lan1"
-        android:id="@+id/imageView32_p4"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/textView4_p4"
-        android:layout_alignEnd="@+id/textView4_p4"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lan1"
-        android:id="@+id/imageView30_p4"
-        android:layout_alignBottom="@+id/imageView32_p4"
-        android:layout_alignLeft="@+id/textView4_p4"
-        android:layout_alignStart="@+id/textView4_p4"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginBottom="15dp"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/lan1"
-        android:id="@+id/imageView28_p4"
-        android:visibility="invisible"
-        android:layout_below="@+id/textView7_p4"
-        android:layout_toLeftOf="@+id/textView4_p4"
-        android:layout_toStartOf="@+id/textView4_p4" />
 
 
 </RelativeLayout>

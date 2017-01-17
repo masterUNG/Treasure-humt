@@ -17,7 +17,7 @@ public class Cartoon2 extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Cartoon2.this,Play3Activity.class));
+                startActivity(new Intent(Cartoon2.this,Play4Activity.class));
             }
         },1000); //เดี๋ยวค่อยมาแก้เป็น 6หมื่นทีหลัง 1 นาที
 
