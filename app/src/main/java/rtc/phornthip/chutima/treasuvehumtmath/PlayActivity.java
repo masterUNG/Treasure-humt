@@ -3,6 +3,7 @@ package rtc.phornthip.chutima.treasuvehumtmath;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -116,6 +117,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
+        soundEffect(R.raw.effect_btn_shut);
+
         switch (view.getId()) {
             case R.id.textView2:
                 checkAnser(Integer.parseInt(ch1TextView.getText().toString()));
@@ -131,6 +134,17 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         playController();
 
     }   // onClick
+
+    private void soundEffect(int indexSound) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), indexSound);
+        mediaPlayer.start();
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }   // soundEffect
 
     private void checkAnser(int intChoice) {
 

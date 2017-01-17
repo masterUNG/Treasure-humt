@@ -3,6 +3,7 @@ package rtc.phornthip.chutima.treasuvehumtmath;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -52,6 +53,16 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
 
 
     }//Main Method
+    private void soundEffect(int indexSound) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(getBaseContext(), indexSound);
+        mediaPlayer.start();
+        mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                mediaPlayer.release();
+            }
+        });
+    }   // soundEffect
 
     private void bindWidget() {
         questTextView = (TextView) findViewById(R.id.textView5_p2);
@@ -116,6 +127,8 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View view) {
+
+        soundEffect(R.raw.effect_btn_shut);
 
         switch (view.getId()) {
             case R.id.textView2_p2:
