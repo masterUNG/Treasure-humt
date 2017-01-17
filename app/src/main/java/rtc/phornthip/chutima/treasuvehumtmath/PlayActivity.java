@@ -52,12 +52,12 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     }//Main Method
 
     private void bindWidget() {
-        questTextView = (TextView) findViewById(R.id.textView5_p2);
-        ch1TextView = (TextView) findViewById(R.id.textView2_p2);
-        ch2TextView = (TextView) findViewById(R.id.textView3_p2);
-        ch3TextView = (TextView) findViewById(R.id.textView4_p2);
-        scoreTextView = (TextView) findViewById(R.id.textView6_p2);
-        timeTextView = (TextView) findViewById(R.id.textView7_p2);
+        questTextView = (TextView) findViewById(R.id.textView5_p3);
+        ch1TextView = (TextView) findViewById(R.id.textView2_p3);
+        ch2TextView = (TextView) findViewById(R.id.textView3_p3);
+        ch3TextView = (TextView) findViewById(R.id.textView4_p3);
+        scoreTextView = (TextView) findViewById(R.id.textView6_p3);
+        timeTextView = (TextView) findViewById(R.id.textView7_p3);
 
         for (int i=0;i<boatImageViews.length;i++) {
             boatImageViews[i] = (ImageView) findViewById(widgitImageInts[i]);
@@ -116,13 +116,13 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.textView2_p2:
+            case R.id.textView2_p3:
                 checkAnser(Integer.parseInt(ch1TextView.getText().toString()));
                 break;
-            case R.id.textView3_p2:
+            case R.id.textView3_p3:
                 checkAnser(Integer.parseInt(ch2TextView.getText().toString()));
                 break;
-            case R.id.textView4_p2:
+            case R.id.textView4_p3:
                 checkAnser(Integer.parseInt(ch3TextView.getText().toString()));
                 break;
         }
