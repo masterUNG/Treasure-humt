@@ -22,8 +22,8 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             ch3TextView, scoreTextView, timeTextView;
     private Random random;
     private int firstAnInt, secondAnInt, answerAnInt, trueChoiceAnInt, scoreAnInt = 0;
-    private int timeAnInt = 20; // กำหนดเวลาที่นี่
-    private int endScoreAnInt = 5; // ขอบเขตคะแนน
+    private int timeAnInt = 120; // กำหนดเวลาที่นี่
+    private int endScoreAnInt = 30; // ขอบเขตคะแนน
     private int falseAnInt = 0;
     private ImageView[] boatImageViews = new ImageView[4];
     private int[] widgitImageInts = new int[]{R.id.imageView3, R.id.imageView4,
@@ -73,6 +73,9 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
         if (timeAnInt < 0) {
             //สิ่งที่จะทำหลังเวลาหมด
             aBoolean = false;
+
+            soundEffect(R.raw.cow);
+
             myAlertDialog("เวลาหมด", "เวลาหมด เริ่มเกมร์ ใหม่");
         }  //if
 
@@ -174,6 +177,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             if (falseAnInt >= 3) {
                 Toast.makeText(PlayActivity.this, "Game Over", Toast.LENGTH_SHORT).show();
                 aBoolean = false;
+                soundEffect(R.raw.cow);
                 myAlertDialog("ผิดเกิน 3 ข้อ", "คุณผิดมากกว่า 3 ข้อ ให้เริ่มเล่นใหม่");
 
 

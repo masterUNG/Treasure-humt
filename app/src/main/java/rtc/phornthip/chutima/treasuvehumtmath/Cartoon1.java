@@ -20,7 +20,7 @@ public class Cartoon1 extends AppCompatActivity {
             public void run() {
                 startActivity(new Intent(Cartoon1.this,Cartoon2.class));
             }
-        },1000); //เดี๋ยวค่อยมาแก้เป็น 6หมื่นทีหลัง 1 นาที
+        },5000); //เดี๋ยวค่อยมาแก้เป็น 6หมื่นทีหลัง 1 นาที
 
     }   // Main Method
 }   // Main Class

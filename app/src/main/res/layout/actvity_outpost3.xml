@@ -37,7 +37,8 @@
         android:layout_alignBottom="@+id/textView3_p3"
         android:layout_alignLeft="@+id/imageView18_p3"
         android:layout_alignStart="@+id/imageView18_p3"
-        android:visibility="invisible" />
+        android:visibility="invisible"
+        android:layout_marginLeft="150dp" />
 
     <ImageView
         android:layout_width="wrap_content"
