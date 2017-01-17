@@ -25,7 +25,8 @@
         <activity android:name=".Play2Activity" />
         <activity android:name=".Play3Activity" />
         <activity android:name=".Play4Activity" />
-        <activity android:name=".Play5Activity"></activity>
+        <activity android:name=".Play5Activity" />
+        <activity android:name=".SuccessGameActivity"></activity>
     </application>
 
 </manifest>
