@@ -13,7 +13,7 @@
     tools:context="rtc.phornthip.chutima.treasuvehumtmath.PlayActivity">
 
     <TextView
-        android:id="@+id/textView2_p3"
+        android:id="@+id/textView2"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_marginTop="350dp"
@@ -25,7 +25,7 @@
 
 
     <TextView
-        android:id="@+id/textView3_p3"
+        android:id="@+id/textView3"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_marginLeft="80dp"
@@ -38,7 +38,7 @@
 
 
     <TextView
-        android:id="@+id/textView4_p3"
+        android:id="@+id/textView4"
         android:layout_width="100dp"
         android:layout_height="60dp"
         android:layout_marginLeft="200dp"
@@ -50,7 +50,7 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/textView5_p3"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10 + 20 ="
@@ -59,7 +59,7 @@
 
 
     <TextView
-        android:id="@+id/textView7_p3"
+        android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -87,12 +87,12 @@
         android:visibility="invisible" />
 
     <TextView
-        android:id="@+id/textView6_p3"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Score = 0"
         android:textSize="40sp"
-        android:layout_below="@+id/textView5_p3"
+        android:layout_below="@+id/textView5"
         android:layout_alignLeft="@+id/imageView4"
         android:layout_alignStart="@+id/imageView4"
         android:textColor="@color/colorAccent" />
@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/boat1"
         android:visibility="invisible"
-        android:layout_alignTop="@+id/textView7_p3"
+        android:layout_alignTop="@+id/textView7"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -112,9 +112,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/boat1"
-        android:layout_alignTop="@+id/textView7_p3"
-        android:layout_alignRight="@+id/textView4_p3"
-        android:layout_alignEnd="@+id/textView4_p3"
+        android:layout_alignTop="@+id/textView7"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"
         android:layout_marginRight="15dp"
         android:layout_marginEnd="15dp" />
 

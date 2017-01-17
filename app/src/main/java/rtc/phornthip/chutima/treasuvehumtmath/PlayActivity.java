@@ -20,8 +20,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     private TextView questTextView, ch1TextView, ch2TextView,
             ch3TextView, scoreTextView, timeTextView;
     private Random random;
-    private int firstAnInt, secondAnInt, answerAnInt, trueChoiceAnInt;
-    private int scoreAnInt = 0; // คะแนน
+    private int firstAnInt, secondAnInt, answerAnInt, trueChoiceAnInt, scoreAnInt = 0;
     private int timeAnInt = 20; // กำหนดเวลาที่นี่
     private int endScoreAnInt = 5; // ขอบเขตคะแนน
     private int falseAnInt = 0;
@@ -54,12 +53,12 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     }//Main Method
 
     private void bindWidget() {
-        questTextView = (TextView) findViewById(R.id.textView5_p3);
-        ch1TextView = (TextView) findViewById(R.id.textView2_p3);
-        ch2TextView = (TextView) findViewById(R.id.textView3_p3);
-        ch3TextView = (TextView) findViewById(R.id.textView4_p3);
-        scoreTextView = (TextView) findViewById(R.id.textView6_p3);
-        timeTextView = (TextView) findViewById(R.id.textView7_p3);
+        questTextView = (TextView) findViewById(R.id.textView5);
+        ch1TextView = (TextView) findViewById(R.id.textView2);
+        ch2TextView = (TextView) findViewById(R.id.textView3);
+        ch3TextView = (TextView) findViewById(R.id.textView4);
+        scoreTextView = (TextView) findViewById(R.id.textView6);
+        timeTextView = (TextView) findViewById(R.id.textView7);
 
         for (int i=0;i<boatImageViews.length;i++) {
             boatImageViews[i] = (ImageView) findViewById(widgitImageInts[i]);
@@ -70,10 +69,10 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
 
         timeAnInt -= 1;
         timeTextView.setText(Integer.toString(timeAnInt) + "วินาที");
-       if (timeAnInt < 0) {
+        if (timeAnInt < 0) {
             //สิ่งที่จะทำหลังเวลาหมด
-           aBoolean = false;
-           myAlertDialog("เวลาหมด", "เวลาหมด เริ่มเกมร์ ใหม่");
+            aBoolean = false;
+            myAlertDialog("เวลาหมด", "เวลาหมด เริ่มเกมร์ ใหม่");
         }  //if
 
 
@@ -118,13 +117,13 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.textView2_p3:
+            case R.id.textView2:
                 checkAnser(Integer.parseInt(ch1TextView.getText().toString()));
                 break;
-            case R.id.textView3_p3:
+            case R.id.textView3:
                 checkAnser(Integer.parseInt(ch2TextView.getText().toString()));
                 break;
-            case R.id.textView4_p3:
+            case R.id.textView4:
                 checkAnser(Integer.parseInt(ch3TextView.getText().toString()));
                 break;
         }
@@ -140,7 +139,7 @@ public class PlayActivity extends AppCompatActivity implements View.OnClickListe
             boatImageViews[i].setVisibility(View.INVISIBLE);
         }   // for
 
-        //กำหนด รูปที่เรือรม
+
 
         if (scoreAnInt < 5) {
             boatImageViews[0].setVisibility(View.VISIBLE);
