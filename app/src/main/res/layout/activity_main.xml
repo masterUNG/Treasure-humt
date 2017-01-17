@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="rtc.phornthip.chutima.treasuvehumtmath.MainActivity"
+    android:background="@drawable/pu">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        app:srcCompat="@drawable/oo"
+        android:id="@+id/imageView7"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="false" />
+
+    <ImageView
+        app:srcCompat="@drawable/pu1"
+        android:id="@+id/imageView"
+        android:background="@drawable/pu"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="120dp"
+        android:layout_width="270dp" />
+
+    <TextView
+        android:text="        เกม Treasure humt math เป็นเกมเกี่ยวกับการบวก ลบ คณิตศาสตร์ "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:id="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="19sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text=" กติกาการเล่น"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:textSize="19sp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:text="         เกมมีทั้งหมด 3 ด่าน แต่ละด่านจะต้องตอบคำถามให้ครบ 20 ข้อ จะได้รับกุญแจจำนวน 1 ดอก โดยสามารถตอบผิด 3 ครั้ง"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView9"
+        android:textSize="19sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="         เมื่อเก็บสะสมกุญแจครบ 3 ดอก คุณจะสามารถไขหีบสมบัติคณิตศาสตรื"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView10"
+        android:textSize="19sp"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
