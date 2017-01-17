@@ -48,7 +48,7 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
 
         playController();
 
-        countTime();
+        // countTime();
 
 
     }//Main Method
@@ -61,7 +61,7 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
         scoreTextView = (TextView) findViewById(R.id.textView6_p3);
         timeTextView = (TextView) findViewById(R.id.textView7_p3);
 
-        for (int i=0;i<boatImageViews.length;i++) {
+        for (int i = 0; i < boatImageViews.length; i++) {
             boatImageViews[i] = (ImageView) findViewById(widgitImageInts[i]);
         }
     }
@@ -93,12 +93,12 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
 
         firstAnInt = random.nextInt(100);   // Random ตัวแรก
         secondAnInt = random.nextInt(100);  // Random ตัวต่อไป
-        answerAnInt = firstAnInt - secondAnInt; // บวกกัน
+        answerAnInt = firstAnInt * secondAnInt; // บวกกัน
         trueChoiceAnInt = random.nextInt(3);
         Log.d("4janV1", "ข้อเลือกที่ถูก ==> " + (trueChoiceAnInt + 1));
 
         //Show Qurstion
-        questTextView.setText(Integer.toString(firstAnInt) + " - " +
+        questTextView.setText(Integer.toString(firstAnInt) + " x " +
                 Integer.toString(secondAnInt) + " = ?");
 
         //Show Choice
@@ -168,8 +168,10 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
 
             falseAnInt += 1;
             Log.d("4janV1", "จำนวนข้อที่ตอบผิด false ==> " + falseAnInt);
+            spShowImage();
 
             int[] ints = new int[]{R.drawable.you3, R.drawable.you3, R.drawable.you3, R.drawable.you3};
+            // int[] ints = new int[]{R.drawable.box1, R.drawable.box3, R.drawable.box5, R.drawable.box6};
 
             try {
 
@@ -193,10 +195,38 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
             //ย้ายไปด่านต่อไป
             startActivity(new Intent(Play3Activity.this, Play4Activity.class));
 
+
         }
 
 
     }   // checkAnser
+
+    private void spShowImage() {
+
+        Log.d("17janV1", "index false ==> " + falseAnInt);
+        for (int i = 0; i < boatImageViews.length; i++) {
+            boatImageViews[i].setVisibility(View.INVISIBLE);
+        }   // for
+
+        switch (falseAnInt) {
+            case 0:
+                boatImageViews[0].setVisibility(View.VISIBLE);
+                break;
+            case 1:
+                boatImageViews[1].setVisibility(View.VISIBLE);
+                break;
+            case 2:
+                boatImageViews[2].setVisibility(View.VISIBLE);
+                break;
+            case 3:
+                boatImageViews[3].setVisibility(View.VISIBLE);
+                break;
+            default:
+                break;
+        }
+
+
+    }
 
     private void myAlertDialog(String strTitle, String strMessage) {
         AlertDialog.Builder builder = new AlertDialog.Builder(Play3Activity.this);

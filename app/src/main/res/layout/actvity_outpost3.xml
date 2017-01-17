@@ -29,6 +29,28 @@
         android:layout_marginTop="180dp"
         android:visibility="invisible" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/you3"
+        android:id="@+id/imageView10_p3"
+        android:layout_alignBottom="@+id/textView3_p3"
+        android:layout_alignLeft="@+id/imageView18_p3"
+        android:layout_alignStart="@+id/imageView18_p3"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/you2"
+        android:id="@+id/imageView20_p3"
+        android:layout_below="@+id/textView4_p3"
+        android:layout_toStartOf="@+id/textView7_p3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/imageView19_p3"
+        android:layout_alignEnd="@+id/imageView19_p3"
+        android:visibility="invisible" />
+
     <TextView
         android:id="@+id/textView2_p3"
         android:layout_width="100dp"
@@ -102,28 +124,6 @@
         android:layout_alignBottom="@+id/textView5_p3"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/you3"
-        android:id="@+id/imageView10_p3"
-        android:layout_alignBottom="@+id/textView3_p3"
-        android:layout_alignLeft="@+id/imageView18_p3"
-        android:layout_alignStart="@+id/imageView18_p3"
-        android:visibility="invisible" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/you2"
-        android:id="@+id/imageView20_p3"
-        android:layout_below="@+id/textView4_p3"
-        android:layout_toStartOf="@+id/textView7_p3"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/imageView19_p3"
-        android:layout_alignEnd="@+id/imageView19_p3"
-        android:visibility="invisible" />
 
 
 </RelativeLayout>
