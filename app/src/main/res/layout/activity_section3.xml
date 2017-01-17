@@ -107,6 +107,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/box1"
+        android:id="@+id/imageView11_p2"
+        android:layout_alignBottom="@+id/imageView12_p2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/box3"
         android:id="@+id/imageView12_p2"
         android:layout_marginBottom="31dp"
         android:layout_above="@+id/textView3_p2"
@@ -120,7 +129,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/box1"
+        app:srcCompat="@drawable/box5"
         android:id="@+id/imageView23_p2"
         android:layout_alignTop="@+id/imageView12_p2"
         android:layout_centerHorizontal="true"
@@ -129,16 +138,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/box1"
-        android:id="@+id/imageView11_p2"
-        android:layout_alignBottom="@+id/imageView12_p2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/box1"
+        app:srcCompat="@drawable/box6"
         android:id="@+id/imageView31_p2"
         android:layout_marginTop="15dp"
         android:layout_alignTop="@+id/imageView25"

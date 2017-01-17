@@ -26,8 +26,8 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
     private int endScoreAnInt = 5; // ขอบเขตคะแนน
     private int falseAnInt = 0;
     private ImageView[] boatImageViews = new ImageView[4];
-    private int[] widgitImageInts = new int[]{R.id.imageView3, R.id.imageView4,
-            R.id.imageView5, R.id.imageView6};
+    private int[] widgitImageInts = new int[]{R.id.imageView11_p2, R.id.imageView12_p2,
+            R.id.imageView23_p2, R.id.imageView31_p2};
     private boolean aBoolean = true;
 
     @Override
@@ -118,13 +118,13 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.textView2_p3:
+            case R.id.textView2_p2:
                 checkAnser(Integer.parseInt(ch1TextView.getText().toString()));
                 break;
-            case R.id.textView3_p3:
+            case R.id.textView3_p2:
                 checkAnser(Integer.parseInt(ch2TextView.getText().toString()));
                 break;
-            case R.id.textView4_p3:
+            case R.id.textView4_p2:
                 checkAnser(Integer.parseInt(ch3TextView.getText().toString()));
                 break;
         }
@@ -169,7 +169,7 @@ public class Play2Activity extends AppCompatActivity implements View.OnClickList
             falseAnInt += 1;
             Log.d("4janV1", "จำนวนข้อที่ตอบผิด false ==> " + falseAnInt);
 
-            int[] ints = new int[]{R.drawable.boat1, R.drawable.boat2, R.drawable.boat3, R.drawable.boat4};
+            int[] ints = new int[]{R.drawable.box1, R.drawable.box3, R.drawable.box5, R.drawable.box6};
 
             try {
 
