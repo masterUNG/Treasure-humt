@@ -50,7 +50,7 @@ public class Play4Activity extends AppCompatActivity implements View.OnClickList
 
         playController();
 
-        // countTime();
+        countTime();
 
 
     }//Main Method
