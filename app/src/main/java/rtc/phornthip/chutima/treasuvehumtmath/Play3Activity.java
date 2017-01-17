@@ -118,13 +118,13 @@ public class Play3Activity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
 
         switch (view.getId()) {
-            case R.id.textView2_p2:
+            case R.id.textView2_p3:
                 checkAnser(Integer.parseInt(ch1TextView.getText().toString()));
                 break;
-            case R.id.textView3_p2:
+            case R.id.textView3_p3:
                 checkAnser(Integer.parseInt(ch2TextView.getText().toString()));
                 break;
-            case R.id.textView4_p2:
+            case R.id.textView4_p3:
                 checkAnser(Integer.parseInt(ch3TextView.getText().toString()));
                 break;
         }
