@@ -22,7 +22,10 @@
         <activity android:name=".Section2" />
         <activity android:name=".Section3" />
         <activity android:name=".SuccessGame" />
-        <activity android:name=".Play2Activity"></activity>
+        <activity android:name=".Play2Activity" />
+        <activity android:name=".Play3Activity" />
+        <activity android:name=".Play4Activity" />
+        <activity android:name=".Play5Activity"></activity>
     </application>
 
 </manifest>
